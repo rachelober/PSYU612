@@ -1,0 +1,28 @@
+a:link {
+}
+a:visited {
+}
+a:hover {
+}
+a:active {
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+h1 {
+}
+
+h2 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+ol.sub {
+  list-style-type: upper-alpha;
+}
+
+p {}
