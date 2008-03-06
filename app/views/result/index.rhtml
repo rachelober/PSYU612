@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>Font Size</th>
+    <th>20% Width Score</th>
+    <th>60% Width Score</th>
+    <th>100% Width Score</th>
+  </tr>
+  <% for user in @users
+  @user = user %>
+  <tr>
+    <td><%= h user.fontsize %></td>
+    <td><%= h user.article1_score %></td>
+    <td><%= h user.article2_score %></td>
+    <td><%= h user.article3_score %></td>
+  </tr>
+  <% end %>
+</table>

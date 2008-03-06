@@ -1,0 +1,10 @@
+<%= start_form_tag(:action => 'submit3') %>
+<% if @article == 1 %>
+  <%= render :partial => 'kooning' %>
+<% elsif @article == 2 %>
+  <%= render :partial => 'oceanic' %>
+<% elsif @article == 3 %>
+  <%= render :partial => 'zimbabwe' %>
+<% end %>
+<%= submit_tag 'I\'m Done!' %>
+<%= end_form_tag %>

@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>PSYU612</title>
+  <%= stylesheet_link_tag 'screen.css' %>
+  <style type="text/css">
+    <!--
+    <% if @user.nil? %>
+      p { font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12pt;
+        color: red;
+      }
+    <% else %>
+      p { font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: <%= @user.fontsize %>pt;
+      }
+    <% end %>
+    -->
+  </style>
+</head>
+<body>
+  <%= flash_messages %>
+  <%= @content_for_layout %>
+</body>
+</html>

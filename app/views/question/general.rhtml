@@ -1,0 +1,40 @@
+<h1>General Computer Usage</h1>
+<%= start_form_tag(:action => 'general_submit') %>
+<p>How old are you? (Please use an integer value)</p>
+<%= text_field("general", "age", "size" => 2) %>
+<p>Average Computer Usage per Day:</p>
+<%= radio_button("general", "avgcompuse", "a") %> 0-2 Hours.
+<%= radio_button("general", "avgcompuse", "b") %> 3-5 Hours.
+<%= radio_button("general", "avgcompuse", "c") %> 6-8 Hours.
+<%= radio_button("general", "avgcompuse", "d") %> 9-11 Hours.
+<%= radio_button("general", "avgcompuse", "e") %> 12+ Hours.
+<p>How long have you been using the computer regularly?</p>
+<%= radio_button("general", "comptime", "a") %> &lt; year.
+<%= radio_button("general", "comptime", "b") %> 1-5 years.
+<%= radio_button("general", "comptime", "c") %> 5-10 years.
+<%= radio_button("general", "comptime", "d") %> Too long to remember.
+<p>How often do you read the news?</p>
+<%= radio_button("general", "howoftennews", "a") %> Almost never.
+<%= radio_button("general", "howoftennews", "b") %> Couples times a month.
+<%= radio_button("general", "howoftennews", "c") %> Couple times a week.
+<%= radio_button("general", "howoftennews", "d") %> Everyday.
+<p>Do you browse the internet for news articles?</p>
+<%= radio_button("general", "onlinepaper", "yes") %> Yes.
+<%= radio_button("general", "onlinepaper", "no") %> No.
+<p>What size monitor do you use?</p>
+<%= radio_button("general", "monitorsize", "a") %> Smaller.
+<%= radio_button("general", "monitorsize", "b") %> 13".
+<%= radio_button("general", "monitorsize", "c") %> 15".
+<%= radio_button("general", "monitorsize", "d") %> 17".
+<%= radio_button("general", "monitorsize", "e") %> Larger.
+<%= radio_button("general", "monitorsize", "f") %> I don't know.
+<p>What screen resolution do you use?</p>
+<%= radio_button("general", "resolution", "a") %> 800x600.
+<%= radio_button("general", "resolution", "b") %> 1024x768.
+<%= radio_button("general", "resolution", "c") %> 1280x1024.
+<%= radio_button("general", "resolution", "d") %> 1600x1200.
+<%= radio_button("general", "resolution", "e") %> Other.
+<%= radio_button("general", "resolution", "f") %> I don't know.
+<p>
+<%= submit_tag 'Submit' %>
+<%= end_form_tag %>

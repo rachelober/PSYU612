@@ -1,0 +1,16 @@
+<table align="center" width="<%= @article_width %>%">
+  <tr>
+    <td>
+      <% if @article == 1 %>
+      <%= render :partial => 'kooning' %>
+      <% elsif @article == 2 %>
+      <%= render :partial => 'oceanic' %>
+      <% elsif @article == 3 %>
+      <%= render :partial => 'zimbabwe' %>
+      <% end %>
+      <%= start_form_tag %>
+      <%= submit_tag 'Next' %>
+      <%= end_form_tag %>
+    </td>
+  </tr>
+</table>
